@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+  transform-origin: center center;
+}
+
+.slow-spin {
+  animation: spin 10s linear infinite;
+  transform-origin: center center;
+}
+
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: rgb(235, 235, 235);
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgb(235, 235, 235);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 207, 207);
+  border-radius: 2px;
+}
